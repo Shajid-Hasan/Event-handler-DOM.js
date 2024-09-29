@@ -30,3 +30,13 @@ const pinkButton = document.getElementById('make-pink');
         }
 
 // option: 4 another
+const makeGreenButton = document.getElementById('make-green');
+        makeGreenButton.addEventListener('click', function makeGreen(){
+            document.body.style.backgroundColor='green';
+        });
+
+//option: 5 final use [MOST OF TIME USES]
+document.getElementById('make-goldenRod').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'goldenrod';
+})
+        // option: 4 final
