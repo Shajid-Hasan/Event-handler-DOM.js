@@ -1,7 +1,7 @@
 console.log('tjis is separate js file');
 
 // option 2: add onclick function
-// Moost uses this
+// Most uses this
 function makeRed(){
     document.body.style.backgroundColor ='red';
 }
