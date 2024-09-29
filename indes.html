@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+</head>
+<body>
+    <h1 onclick="console.log('i am clicked');">DOM er aj k special event</h1>
+    <button onclick="console.log(7)">click me</button>
+    <button  onclick="console.log(67);">Another Button</button><br>
+    <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
+    <button onclick="makeRed()">Make Red</button>
+    <button id="make-blue">Make blue</button>
+    <button id="make-purple">Make Purple</button>
+    <script src="js/events.js"></script>
+
+    <script>
+        const purpleButton = document.getElementById('make-purple');
+        // console.log(purpleButton);
+        purpleButton.onclick = function makePurple(){
+            document.body.style.backgroundColor ='purple';
+        }
+
+        // function makeBlue(){
+        //     document.body.style.backgroundColor = 'blue';
+        // }
+    </script>
+</body>
+</html>
